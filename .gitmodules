@@ -1,0 +1,5 @@
+[submodule "src/themes/arcblock_website_theme"]
+	path = src/themes/arcblock_website_theme
+	url = git@github.com:ArcBlock/arcblock_website_theme.git
+	ignore = dirty
+	branch = master

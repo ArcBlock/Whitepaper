@@ -1,0 +1,221 @@
+# a minimalist config file
+baseurl = "/"
+title = "Post"
+theme = "arcblock_website_theme"
+themesDir = "themes"
+publishDir = "../output"
+
+
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= true
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+# Define the number of posts per page
+paginate = 10
+
+# Code higlighting settings
+pygmentsCodefences = true
+pygmentsCodeFencesGuesSsyntax = false
+pygmentsOptions = ""
+pygmentsStyle = "monokai"
+# The monokai stylesheet is included in the base template.
+pygmentsUseClasses = true
+
+[languages]
+[languages.en]
+weight = 1
+title  = "Arcblock | Blockchain 3.0"
+languageName = "English"
+
+[languages.en.menu]
+
+[[languages.en.menu.main]]
+    name = "Version2.0"
+    url  = "/"
+    weight = 1
+
+[[languages.en.menu.main]]
+    name = "ICO Version"
+    url  = "/ico"
+    weight = 2
+
+[languages.ch]
+weight = 2
+title  = "CHArcblock | Blockchain 3.0"
+languageName = "中文"
+
+
+[languages.ch.menu]
+
+[[languages.ch.menu.main]]
+    name = "Version2.0"
+    url  = "/"
+    weight = 1
+
+[[languages.ch.menu.main]]
+    name = "ICO Version"
+    url  = "/ico"
+    weight = 2
+
+
+# footer other menu
+[[languages.en.menu.other]]
+    name = "Terms of Use"
+    url  = "/termsofus/"
+    weight = 1
+
+[[languages.en.menu.other]]
+    name = "Privacy Policy"
+    url  = "/privacy/"
+    weight = 2
+
+[[languages.en.menu.other]]
+    name = "Career"
+    url  = "/career/"
+    weight = 3
+
+
+[[languages.ch.menu.other]]
+    name = "使用条款"
+    url  = "/termsofus/"
+    weight = 1
+
+[[languages.ch.menu.other]]
+    name = "隐私政策"
+    url  = "/privacy/"
+    weight = 2
+    
+[[languages.ch.menu.other]]
+    name = "事业"
+    url  = "/career/"
+    weight = 3
+
+[params]
+    search = true
+    viewMorePostLink = "/post/"
+    author = "ArcBlock"
+    defaultKeywords = ["arcblock", "hugo", "go"]
+    defaultDescription = "Site template made by arcblock using hugo"
+
+    # Google Maps API key (if not set will default to not passing a key.)
+    # googleMapsApiKey = ""
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "default"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io email
+    email = "contact@arcblock.io"
+
+    support = "support@arcblock.io"
+    copyright = "Copyright © 2018 ArcBlock Foundation Ltd."
+
+    # Format dates with Go's time formatting
+    date_format = "January 2"
+
+    logo = "../img/nav/logo.png"
+    background = "../img/hero/hero_building.jpg"
+    gradient = "to top, rgba(132, 234, 209, 0.9), rgba(0, 149, 233, 0.9)"
+    address = """<p><strong>Arcblock, Inc.</strong>
+        <br>13/25 New Avenue
+        <br>Newtown upon River
+        <br>45Y 73J
+        <br>England
+        <br>
+        <strong>Great Britain</strong>
+      </p>
+      """
+    latitude = "-12.043333"
+    longitude = "-77.028333"
+
+ # Configure the language example tabs.
+[params.widgets]
+    categories = true
+    tags = true
+    search = false
+
+[[params.language_tabs]]
+    key = "go"
+    name = "Go"
+
+[[params.language_tabs]]
+    key = "shell"
+    name = "Shell"
+
+[[params.language_tabs]]
+    key = "ruby"
+    name = "Ruby"
+
+[[params.language_tabs]]
+    key = "python"
+    name = "Python"
+
+[[params.language_tabs]]
+
+    key = "javascript"
+    name = "Javascript"
+
+[Permalinks]
+    post = "/post/:year/:month/:day/:filename/"
+
+
+[params.signup]
+    title = "Sign Up For Our Newsletter"
+    subtitle = "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur "
+    button = "Subscribe"
+
+[params.community]
+    title = "Community"
+
+    [[params.communityitem]]
+        name = "Telegram"
+        icon = "fa fa-2x fa-telegram"
+        url  = "https://t.me/ArcBlock"
+    [[params.communityitem]]
+        name = "Bitcointalk.org"
+        icon = "fa fa-2x fa-comments"
+        url  = "https://bitcointalk.org/index.php?topic=2699379.msg27589213#msg27589213"
+    [[params.communityitem]]
+        name = "Github"
+        icon = "fa fa-2x fa-github"
+        url  = "https://github.com/arcblock"
+    [[params.communityitem]]
+        name = "Twitter"
+        icon = "fa fa-2x fa-twitter"
+        url  = "https://twitter.com/ArcBlock_io"
+    [[params.communityitem]]
+        name = "Facebook"
+        icon = "fa fa-2x fa-facebook"
+        url  = "https://www.facebook.com/arcblock.io/"
+    [[params.communityitem]]
+        name = "Instagram"
+        icon = "fa fa-2x fa-instagram"
+        url  = "https://www.instagram.com/arcblock/"
+    [[params.communityitem]]
+        name = "Reddit"
+        icon = "fa fa-2x fa-reddit"
+        url  = "https://www.reddit.com/r/arcblock/"
+    [[params.communityitem]]
+        name = "Linkedin"
+        icon = "fa fa-2x fa-linkedin"
+        url  = "https://www.linkedin.com/company/arcblock/"
+[params.other]
+    title = "Other"
+
