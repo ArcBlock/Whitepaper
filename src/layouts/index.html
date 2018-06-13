@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+{{ partial "head_doc.html" . }}
+<body >
+    {{ partial "sidebar_doc.html" . }}
+    <div class="page-wrapper">
+        <div class="dark-box"></div>
+        <div class="content">
+            {{ $whitepaper := .Paginate (where .Data.Pages "Type" "whitepaper2.0") }}
+            {{ range $whitepaper.Pages }}
+                {{ .Content }}
+            {{ end }}
+        </div>
+    </div>
+</body>
+</html>
