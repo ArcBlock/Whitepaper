@@ -6,6 +6,11 @@ This is a "keep up to date version" whitepaper, we will keep updating to make su
 
 **The PDF version published during Token Sale Event live under `/src/content/ico` folder, they are the exact same version we published earlier. **
 
+- The latest published whitepaper:  https://www.arcblock.io/whitepaper/
+- The PDF version whitepaper used for Token Sale Event
+  - English version: https://www.arcblock.io/file/whitepaper/WhitePaperEnV2_en-US.pdf
+  - Chinese version: 
+
 ## How to run locally
 
 ### step 1: install Hugo
