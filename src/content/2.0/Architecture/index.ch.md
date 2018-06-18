@@ -1,6 +1,5 @@
 ---
 title: Architecture
-weight: 3
 ---
 
 # Architecture
