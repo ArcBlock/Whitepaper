@@ -1,6 +1,5 @@
 ---
 title: The Token Economy and the Service
-weight: 5
 ---
 
 # The Token Economy and the Service

@@ -1,6 +1,5 @@
 ---
 title: Acknowledgements
-weight: 6
 ---
 
 # Acknowledgements
