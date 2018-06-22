@@ -1,8 +1,12 @@
 +++
-title = "WhitePaper List"
+title = "技术白皮书"
 type = "Whitepaper"
 +++
 
-{{< whitepaper name="WhitePaper" version="ico" link="" >}}
-{{< whitepaper name="WhitePaper" version="1.0" link="#" >}}
-{{< whitepaper name="WhitePaper" version="2.0" link="/whitepaper/" >}}
+# ArcBlock 技术白皮书
+{{< whitepaper name="ArcBlock 技术白皮书" version="通证销售版本（2017.12）" link="/ico/en_v2.pdf" >}}
+{{< whitepaper name="ArcBlock 技术白皮书" version="最新更新版本" link="2.0/" >}}
+
+# 开放链访问协议白皮书
+
+Coming Soon
