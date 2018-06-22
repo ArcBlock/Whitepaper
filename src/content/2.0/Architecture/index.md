@@ -15,7 +15,7 @@ ArcBlock’s design is based on following core principles:
 ## System Architecture
 The ArcBlock platform introduces a suite of revolutionary technologies designed to mainstream blockchain applications by making them easy for the average consumer to use.
 
-![my img](HighLevelOverviewofArcBlock.png)
+![my img](./HighLevelOverviewofArcBlock.png)
 
 ### Open Chain Access Protocol 
 Our open source protocol provides an abstract layer for accessing underlying blockchains. Similar to an ODBC or JDBC interface to a set of databases, our Open Chain Access Protocol enables your application to work on different blockchains. There’s no need to alter your business logic or work with multiple chain technologies. 

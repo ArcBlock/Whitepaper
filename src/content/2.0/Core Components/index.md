@@ -98,7 +98,7 @@ An API gateway is essential in microservice architecture. An API gateway is a fa
 
 The gateway supports various network protocols by default, including WebSocket, DDP,  HTTPS, and MQTT. Advanced developers can extend  the gateway with new network protocols to fit their needs.
 
-![my img](SimpleReferenceImplementationinNode.png) 
+![my img](./images/SimpleReferenceImplementationinNode.png) 
 
 ### Pub/Sub
 Publish–subscribe is a messaging pattern where message senders (publishers) categorize published messages into classes without knowing which subscribers will receive them, if any. Similarly, subscribers only receive messages assigned to the classes they've expressed interest in, without knowing which publishers there are, if any. 
@@ -108,7 +108,7 @@ The publish–subscribe pattern is a sibling of the message queue paradigm. It�
 ### Decentralized and Secured
 We use a completely decentralized design to implement and simplify cloud services. ArcBlock’s API Gateway can be used out-of-the-box with zero configuration—just start it up and it will do its magic. It also features name-based addressing, clusters (i.e. automatic load balancing), and perfect secrecy (all network traffic is encrypted).
 
-![my img](HowDecentralizedMessagingandPubSubWorks.png)  
+![my img](./images/HowDecentralizedMessagingandPubSubWorks.png)  
 
 ## Decentralized Media and Assets 
 While ArcBlock’s core components weren’t designed to handle media and assets, Blocklet can be used to handle them with support from other systems. Blocklet can also help you create off-chain data, or verify off-chain data with the on-chain data. . Today, most decentralized applications handle media and assets with off-chain logic. They either use a cloud-based centralized solution like AWS S3 or Microsoft Windows Azure’s storage service, or a decentralized solution like IPFS  or Swarm . 
@@ -124,14 +124,14 @@ The version for the web is a simple communication library that works with HTTPS 
 
 This is an important advantage for application development. Engineers can spend most of their time handling the client side and user experiences, and write most of the code in this layer. Thanks to ArcBlock, however, now they can develop client applications the same way they build traditional, non-blockchain applications. Our design enables developers to work with their favorite frameworks and tools so they can draw upon community resources and support.   
 
-![my img](ClientCommunicationModel.png)
+![my img](./images/ClientCommunicationModel.png)
 
 ## Algorand
 ArcBlock is among the first blockchain startups to adopt Algorand  in production. 
 
 Algorand was founded by Silvio Micali, winner of the 2012 ACM Turing Award. Micali is a pioneer in cryptocurrency and blockchain technology. He was instrumental in the development of many of the building blocks of cryptography, published works on game theory and Byzantine Agreements, and even launched a micropayments startup. When Micali saw Bitcoin, he thought it could be improved; Algorand is the result of that quest.
 
-![my img](OverviewofTransactionFlowinAlgorand.png)
+![my img](./images/OverviewofTransactionFlowinAlgorand.png)
 
 Algorand  involves suddenly and randomly selecting a small group of nodes to be in charge of the next block, then receiving a reward in the form of a percentage of the block transaction. This must be done in a way that can’t be manipulated by an adversary. No one selects the group; it’s selected by hash instead. Micali suggests taking a pseudo-random generator which is pre-specified and elongating as much as you need to select the committee. The group decides the next block via a redesigned Byzantine agreement in which a leader is picked randomly from the group. 
 
