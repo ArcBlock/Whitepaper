@@ -1,8 +1,12 @@
 +++
-title = "WhitePaper List"
+title = "Technical WhitePapers"
 type = "Whitepaper"
 +++
 
-{{< whitepaper name="WhitePaper" version="ico" link="/ico/en_v2.pdf" >}}
-{{< whitepaper name="WhitePaper" version="1.0" link="#" >}}
-{{< whitepaper name="WhitePaper" version="2.0" link="/2.0/" >}}
+# ArcBlock WhitePaper
+{{< whitepaper name="WhitePaper" version="Token Sale Version (2017/12)" link="/ico/en_v2.pdf" >}}
+{{< whitepaper name="WhitePaper" version="Latest Version" link="2.0" >}}
+
+# OCAP WhitePaper
+
+Coming Soon
