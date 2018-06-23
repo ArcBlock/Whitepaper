@@ -1,7 +1,7 @@
 +++
 title = "Technical WhitePapers"
 type = "Whitepaper"
-aliases = [/file/whitepaper/WhitePaperEnV2_en-US.pdf]
+aliases = ["/file/whitepaper/WhitePaperEnV2_en-US.pdf"]
 +++
 
 # ArcBlock WhitePaper
