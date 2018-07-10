@@ -14,7 +14,7 @@ This document provides a technical overview of ArcBlock, a blockchain ecosystem 
 The information in this document is intended for informational purposes only. ArcBlock may make improvements or changes to the products, architectural design, or programs described in this document at any time without notice.
 
 ## Related Documents
-ArcBlock Official Website: https://arcblock.io
+ArcBlock Official Website: https://arcblock.io<br>
 ICO Version Whitepaper: https://www.arcblock.io/whitepaper/
 
 # Overview
@@ -93,14 +93,15 @@ ArcBlock is built with an open standard. We’re trying our best not to reinvent
 Our team members are actively involved with a range of standards organizations, non-profit foundations, and committees. These currently include the W3C Blockchain Community Group Community Group, IEEE Standard Association’s Blockchain Community, Enterprise Ethereum Alliance, Linux Foundation, and Hyperledger Foundation. This list will expand over time.
 
 # Architecture
-ArcBlock aims to build a scalable, extensible, and easy-to-use platform for building and deploying decentralized blockchain applications.
+ArcBlock aims to build a <strong>scalable, extensible,</strong> and <strong> easy-to-use</strong> platform for building and deploying decentralized blockchain applications.
 
 ## Design Principles
 ArcBlock’s design is based on following core principles:
-	-	The user experience comes first.  
-	-	Performance matters.
-	-	The system will be built on an open standard.
-	-	The system will build upon an Incentive-driven economy.
+
+ -	The user experience comes first.  
+ -	Performance matters.
+ -	The system will be built on an open standard.
+ -	The system will build upon an Incentive-driven economy.
 
 ## System Architecture
 The ArcBlock platform introduces a suite of revolutionary technologies designed to mainstream blockchain applications by making them easy for the average consumer to use.
@@ -287,7 +288,7 @@ ArcBlock is among the first blockchain startups to adopt Algorand  in production
 
 Algorand was founded by Silvio Micali, winner of the 2012 ACM Turing Award. Micali is a pioneer in cryptocurrency and blockchain technology. He was instrumental in the development of many of the building blocks of cryptography, published works on game theory and Byzantine Agreements, and even launched a micropayments startup. When Micali saw Bitcoin, he thought it could be improved; Algorand is the result of that quest.
 
-<center>![whitepaper](./images/OverviewofTransactionFlowInAlgorand.png)</center>
+<center>![whitepaper](./images/OverviewofTransactionFlowinAlgorand.png)</center>
 *<center><h3>Fig: An overview of transaction flow in Algorand </h3></center>*
 
 Algorand  involves suddenly and randomly selecting a small group of nodes to be in charge of the next block, then receiving a reward in the form of a percentage of the block transaction. This must be done in a way that can’t be manipulated by an adversary. No one selects the group; it’s selected by hash instead. Micali suggests taking a pseudo-random generator which is pre-specified and elongating as much as you need to select the committee. The group decides the next block via a redesigned Byzantine agreement in which a leader is picked randomly from the group.
@@ -297,10 +298,10 @@ ArcBlock uses Algorand and its variant in a number of places. For example, we us
 # The Token Economy and the Service
 What makes ArcBlock unique is that it’s not just a set of APIs or libraries—it’s a robust platform with a full set of features. In addition, the service runs on top of its own native token system, which is driven by latest blockchain technology.
 
-## The ArcBlock Token (ART)
+## The ArcBlock Token (ABT)
 The ArcBlock Token (ART) is native to the ArcBlock platform. To achieve high-performance transactions, we built an optimized blockchain dedicated to ArcBlock’s own token services and the public ledger. The design goal is to achieve >100,000 Tx/s, which is more than adequate for a wide range of applications. In the future this blockchain could be improved for broader purposes.
 
-The ART is designed as a general purpose token that can be used in different scenarios.  Within ArcBlock, the ART’s basic utility value is to pay for the cost of using the ArcBlock system.  Like a cloud computing service, the ART is a utility token for paying the cost associated with using the service.
+The ABT is designed as a general purpose token that can be used in different scenarios.  Within ArcBlock, the ART’s basic utility value is to pay for the cost of using the ArcBlock system.  Like a cloud computing service, the ART is a utility token for paying the cost associated with using the service.
 
 <center>![whitepaper](./images/ArcBlockToken.png)</center>
 
