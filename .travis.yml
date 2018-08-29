@@ -1,0 +1,14 @@
+sudo: false
+git:
+  submodules: false
+install:
+- curl -fLo /tmp/hugo_0.40.2_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/download/v0.40.2/hugo_0.40.2_Linux-64bit.deb
+- sudo dpkg -i /tmp/hugo_0.40.2_Linux-64bit.deb
+branches:
+  only:
+  - master
+before_script: make init
+script: make build && make deploy
+env:
+  global:
+    secure: rWgf/4bQ94UxNmCiGcydpYzBUOE4R/bnf773XuWD0tPt7RztJxR41zqsYOEcspGmOCrsvPnFWs7jVapkZIzMJYHMbvWrH52nWh0vzhEoZlqMuqrnfy+v/hfHoYg3of4kglC1FcfmdL5MueYrDcE+o+fdGkyYpAhEvmczybk/HGBLYWPkCxoElBnYxgrfxv32am3X2eqAsJXLY8O7YwbwzFebH8CVGyqDQo9wTs93nHVjVXF33cc5k9o4UgEL711vuiQgjpg8xNH0WiYSNMty18+i7Xc8LTk2f0mUxpGdsGcYH5GwPOL1oCnST6O/RbXFZsRizEVVcMJz9Erp2gzGI3nCxSOOHqQZE+ZczvY/FHnL49Ci3tNrnLt7/jsREg7J+D9ofHEKm8VaBuZNO9wuwapBZstkDLyYor9FkOT6XAJ6nJ2MxiOHUgsIH2bV3SKkVS2DaqeaOaYuVjlmSWvrRVuGXiFqpqdCt/dpfp9/UkeptfQEMtohoq39kyaFpYJlQX1zXES+S+ft8eaDegWJT53Fld8uyRHt2BUs52J6XNGU1Gdr7VuansUPvtddbODawTufAoNpiNdQipCAboJCCgeBO/9mMyFbPAM0gC80oUBxyuHoD7QWv/Nx+WWY9yEoO91IR6cnVak+MlBBtQV4fhOu0wnWfjrfpbNofF2OiQM=

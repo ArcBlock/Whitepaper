@@ -17,6 +17,7 @@ all: build
 init:
 #	@brew instsall $(HUGO)
 	@git submodule update --init --recursive
+	@gem install travis -v 1.8.9 --no-rdoc --no-ri
 
 clean:
 	@rm -rf $(OUTPUT_FOLDER)
@@ -24,6 +25,9 @@ clean:
 
 watch:
 	@echo "Hugo server can directly monitor the source change. Just run make run"
+
+deploy:
+	@.makefiles/trigger_main_build.sh
 
 run:
 	@cd src; $(HUGO) server
