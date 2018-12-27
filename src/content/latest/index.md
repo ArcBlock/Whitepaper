@@ -1,7 +1,9 @@
-+++
-title = "Technical WhitePaper"
-type = "Whitepaper"
-+++
+---
+title: "Technical WhitePaper"
+type: "Whitepaper"
+path: "/whitepaper/latest"
+layout: "docs"
+---
 
 # Introduction
 
@@ -44,17 +46,17 @@ Making blockchain free to use is key to widespread adoption. A free platform wil
 ### Platform Lock-In
 As with the early days of any computing technology, blockchains have critical “platform lock-in” problems. Developers have to decide which blockchain to support, then implement platform-specific code that makes it very difficult to switch an application to a different blockchain later on.
 
-Developers don’t want to be locked into working with a certain blockchain technology. They need the freedom to evaluate, use, and switch between options. Some applications may even need to run on multiple platforms to provide the best user experience.  
+Developers don’t want to be locked into working with a certain blockchain technology. They need the freedom to evaluate, use, and switch between options. Some applications may even need to run on multiple platforms to provide the best user experience.
 
 ### Lack of Features
-People have high expectations for blockchain—the news media, evangelists, and journalists paint a bright future for decentralized applications for the public, especially with the increasingly high prices of cryptocurrencies.  In reality, however, blockchain technology is still in its infancy. Most blockchain services lack rich features and don’t have a mechanism to encourage the community to contribute to the feature stacks.  
+People have high expectations for blockchain—the news media, evangelists, and journalists paint a bright future for decentralized applications for the public, especially with the increasingly high prices of cryptocurrencies.  In reality, however, blockchain technology is still in its infancy. Most blockchain services lack rich features and don’t have a mechanism to encourage the community to contribute to the feature stacks.
 
 Blockchain protocols make them very easy to fork, and there's been a recent spike in forks created for various purposes. Unfortunately, forks typically only improve on the forked branch, splitting the community and computing resources. The incentive mechanisms for blockchains just aren't designed to encourage contributions to the blockchain tech stack yet.
 
-## The ArcBlock Platform  
+## The ArcBlock Platform
 ArcBlock solves these problems through its revolutionary new design. Unlike its predecessors, ArcBlock is a <strong>platform service</strong>, rather than a standalone software package or set of APIs. ArcBlock is a comprehensive solution that combines blockchain technology with Cloud Computing.
 
-ArcBlock is an <strong>incentive-driven marketplace</strong> for reusable services, components, and even applications. <strong>“Miners”</strong>  in ArcBlock platform not only bring computing resources, more over they help to build the platform together by providing reusable components, new services, and even ready to deploy applications.  People who contributed resources or services will be rewarded with tokens to form a positive, self-growing platform that continues to evolve on its own. The ArcBlock platform service isn’t our creation alone. It’s developed by the entire ArcBlock community—we’re just kick-starting a new blockchain revolution.  
+ArcBlock is an <strong>incentive-driven marketplace</strong> for reusable services, components, and even applications. <strong>“Miners”</strong>  in ArcBlock platform not only bring computing resources, more over they help to build the platform together by providing reusable components, new services, and even ready to deploy applications.  People who contributed resources or services will be rewarded with tokens to form a positive, self-growing platform that continues to evolve on its own. The ArcBlock platform service isn’t our creation alone. It’s developed by the entire ArcBlock community—we’re just kick-starting a new blockchain revolution.
 
 ArcBlock’s introduction of the <strong>Open Chain Access Protocol</strong> enabled open connectivity over multiple blockchain protocols. Developers now have the freedom to evaluate blockchain protocols, and even switch back and forth between them. The Open Chain Access Protocol makes it easy to implement new blockchains as the technology evolves. It eliminates the platform lock-in issue and enables applications to run on multiple blockchain fabrics, vastly improving the developer and user experiences.
 
@@ -64,11 +66,11 @@ Blocklet does more than access blockchains. It connects to any existing data sou
 
 Our unique design aims to provide a high-performance, user-friendly, cost efficient, and protocol-agnostic platform. We believe that ArcBlock represents a major technological advance that will usher in the 3.0 generation of blockchain applications.
 
-<center>![whitepaper](./images/RoadmapTowardBlockcahin3.0.png)</center>
+![whitepaper](./images/RoadmapTowardBlockcahin3.0.png)
 *<center><h3>Fig: Road map toward Blockchain 3.0</h3></center>*
 
 ## ArcBlock’s Advantages
-In addition to solving the common problems outlined above, building and deploying decentralized blockchain applications with ArcBlock has significant advantages over the vendor-specific frameworks available in today’s market.  
+In addition to solving the common problems outlined above, building and deploying decentralized blockchain applications with ArcBlock has significant advantages over the vendor-specific frameworks available in today’s market.
 
 ### Built for the New Token Economy
 ArcBlock is a self-evolving ecosystem—not just a software platform built by one centralized organization. We at ArcBlock, Inc. and the ArcBlock Foundation are only jump starting the project; the platform will continue to develop and grow on its own.
@@ -98,7 +100,7 @@ ArcBlock aims to build a <strong>scalable, extensible,</strong> and <strong> eas
 ## Design Principles
 ArcBlock’s design is based on following core principles:
 
- -	The user experience comes first.  
+ -	The user experience comes first.
  -	Performance matters.
  -	The system will be built on an open standard.
  -	The system will build upon an Incentive-driven economy.
@@ -106,7 +108,7 @@ ArcBlock’s design is based on following core principles:
 ## System Architecture
 The ArcBlock platform introduces a suite of revolutionary technologies designed to mainstream blockchain applications by making them easy for the average consumer to use.
 
-<center>![whitepaper](./images/HighLevelOverviewArcBlock.png)</center>
+![whitepaper](./images/HighLevelOverviewArcBlock.png)
 *<center><h3>Fig: High-level Overview of ArcBlock</h3></center>*
 
 ### Open Chain Access Protocol
@@ -117,12 +119,12 @@ Chain Adapters can be built by the community and encouraged by the incentive mec
 ### Blocklet
 Blocklet is a serverless computing architecture component for running various types of applications. Use Blocklet for smart contracts, oracle, resource and asset handling, and off-chain business logic. Blocklet communicates with blockchains through ArcBlock’s Open Chain Access Protocol, and can be orchestrated with our Algorand-based consensus algorithm.
 
-Anyone can use Blocklet to build services and components and contribute them under the incentive system. Community members will receive tokens when others use their contributions.   
+Anyone can use Blocklet to build services and components and contribute them under the incentive system. Community members will receive tokens when others use their contributions.
 
 ### Blocklet Components
 Blocklet Components are pre-built blocklets that form the foundation of the ArcBlock platform. Most of ArcBlock’s features (such as its token services, user identity services, etc.) are implemented with them. Blocklet Components are highly reusable and customizable.
 
-Incorporate our pre-built Blocklet Components into your applications to get up and running fast. We provide components for user identity management, utility tokens, wallets, messaging, notification services, and more. Use them out-of-the-box, or as customizable starting points for your own creations.  
+Incorporate our pre-built Blocklet Components into your applications to get up and running fast. We provide components for user identity management, utility tokens, wallets, messaging, notification services, and more. Use them out-of-the-box, or as customizable starting points for your own creations.
 
 Blocklet Components can also be built and contributed by the community. They are managed through the ArcBlock Marketplace app.
 
@@ -155,7 +157,7 @@ The following sections offer more detailed descriptions of our key components an
 ## Open Chain Access Protocol
 ArcBlock’s Open Chain Access Protocol enables your application to adapt to a variety of blockchain protocols including Bitcoin, Ethereum, Hyperledger, and more. The Open Chain Access Protocol will be open sourced with an MIT license so that everyone in the blockchain community will be able to contribute, create extensions, and make improvements. We will develop the protocol in private mode, then open source it once we reach the release candidate milestone.
 
-<center>![whitepaper-openchain](./images/OpenChainAccessProtocol.png)</center>
+![whitepaper-openchain](./images/OpenChainAccessProtocol.png)
 
 ### Open Chain Access Layer
 The Open Chain Access Layer defines high-level, generic APIs that enable open connectivity and access to a range of blockchain protocols. The Layer is supported by a Chain Adapter under layer. Each Chain Adapter is implemented for a specific blockchain protocol.
@@ -192,7 +194,7 @@ A look back at the development of database systems and applications reveals many
 ## Blocklet
 Blocklet is the core of ArcBlock.  More than an application protocol, it’s also a software architect that lays the foundational building blocks of ArcBlock itself. The ArcBlock platform is built on a series of Blocklets. The Open Chain Access Protocol allows Blocklet to communicate with under layer blockchains. The Distributed pub/sub gateway allows Blocklets to communicate with the client-side code live in the user’s browser or mobiles apps. In short, Blocklets are at the center of the entire system.
 
-<center>![whitepaper](./images/BlockLet.png)</center>
+![whitepaper](./images/BlockLet.png)
 
 ### Microservice Architecture
 Microservice architecture  is a perfect match for blockchain applications. A variant of the service-oriented architecture (SOA) style, microservice architecture structures an application as a collection of loosely coupled services. The services should be fine-grained and the protocols lightweight. Deconstructing an application into a variety of smaller services improves modularity and makes the application easier to understand, develop, and test.
@@ -245,14 +247,14 @@ Blocklet Building Blocks are pre-built blocklets that lay the foundation for the
 ## Decentralized Pub/Sub API Gateway
 A distributed messaging system supports pub/sub and acts as an API gateway for Blocklets. ArcBlock's gateway uses a decentralized design and secure communication channels. Your applications will run in both web browsers and mobile apps, giving users reactive, real-time experiences.
 
-<center>![whitepaper-openchain](./images/APIGateway.png)</center>
+![whitepaper-openchain](./images/APIGateway.png)
 
 ### API Gateway
 An API gateway is essential in microservice architecture. An API gateway is a façade that provides a simple API interface to a complex subsystem. It essentially decouples the interface that clients see (in our case API consumers, which could be mobile apps, web clients, or thin clients) from the underlying implementations. In ArcBlock, all features are implemented with Blocklets. Rather than communicating directly with clients, Blocklets communicate through the API Gateway.
 
 The gateway supports various network protocols by default, including WebSocket, DDP,  HTTPS, and MQTT. Advanced developers can extend  the gateway with new network protocols to fit their needs.
 
-<center>![whitepaper](./images/SimpleReferenceImplementationNode.png)</center>
+![whitepaper](./images/SimpleReferenceImplementationNode.png)
 *<center><h3>Fig: A Simple Reference Implementation in Node.js(as of Dec 2017)</h3></center>*
 
 ### Pub/Sub
@@ -263,7 +265,7 @@ The publish–subscribe pattern is a sibling of the message queue paradigm. It�
 ### Decentralized and Secured
 We use a completely decentralized design to implement and simplify cloud services. ArcBlock’s API Gateway can be used out-of-the-box with zero configuration—just start it up and it will do its magic. It also features name-based addressing, clusters (i.e. automatic load balancing), and perfect secrecy (all network traffic is encrypted).
 
-<center>![whitepaper](./images/DecentralizedMessagingandPubSub.png)</center>
+![whitepaper](./images/DecentralizedMessagingandPubSub.png)
 *<center><h3>Fig: How decentrailized messaging and pub/sub works</h3></center>*
 
 ## Decentralized Media and Assets
@@ -276,11 +278,11 @@ While the ArcBlock platform uses AWS to handle its own media and assets, we may 
 ## Client Library/Framework
 ArcBlock provides libraries and frameworks for client application development. These libraries support web, iOS, and Android platforms. With the Electron Framework , the web version can be easily encapsulated and packaged as a desktop application for Windows and Mac OS.
 
-The version for the web is a simple communication library that works with HTTPS and WebSocket to provide a real-time and reactive user experience. It works with nearly all other web frameworks,  allowing you to pick the framework you’d like to work with, such as Meteor, VUE, or React.  
+The version for the web is a simple communication library that works with HTTPS and WebSocket to provide a real-time and reactive user experience. It works with nearly all other web frameworks,  allowing you to pick the framework you’d like to work with, such as Meteor, VUE, or React.
 
-This is an important advantage for application development. Engineers can spend most of their time handling the client side and user experiences, and write most of the code in this layer. Thanks to ArcBlock, however, now they can develop client applications the same way they build traditional, non-blockchain applications. Our design enables developers to work with their favorite frameworks and tools so they can draw upon community resources and support.   
+This is an important advantage for application development. Engineers can spend most of their time handling the client side and user experiences, and write most of the code in this layer. Thanks to ArcBlock, however, now they can develop client applications the same way they build traditional, non-blockchain applications. Our design enables developers to work with their favorite frameworks and tools so they can draw upon community resources and support.
 
-<center>![whitepaper](./images/ClientCommunicationModel.png)</center>
+![whitepaper](./images/ClientCommunicationModel.png)
 *<center><h3>Fig: Client communication model of our reference implementation on AWS (as of Dec 2017)</h3></center>*
 
 ## Algorand
@@ -288,7 +290,7 @@ ArcBlock is among the first blockchain startups to adopt Algorand  in production
 
 Algorand was founded by Silvio Micali, winner of the 2012 ACM Turing Award. Micali is a pioneer in cryptocurrency and blockchain technology. He was instrumental in the development of many of the building blocks of cryptography, published works on game theory and Byzantine Agreements, and even launched a micropayments startup. When Micali saw Bitcoin, he thought it could be improved; Algorand is the result of that quest.
 
-<center>![whitepaper](./images/OverviewofTransactionFlowinAlgorand.png)</center>
+![whitepaper](./images/OverviewofTransactionFlowinAlgorand.png)
 *<center><h3>Fig: An overview of transaction flow in Algorand </h3></center>*
 
 Algorand  involves suddenly and randomly selecting a small group of nodes to be in charge of the next block, then receiving a reward in the form of a percentage of the block transaction. This must be done in a way that can’t be manipulated by an adversary. No one selects the group; it’s selected by hash instead. Micali suggests taking a pseudo-random generator which is pre-specified and elongating as much as you need to select the committee. The group decides the next block via a redesigned Byzantine agreement in which a leader is picked randomly from the group.
@@ -303,7 +305,7 @@ The ArcBlock Token (ART) is native to the ArcBlock platform. To achieve high-per
 
 The ABT is designed as a general purpose token that can be used in different scenarios.  Within ArcBlock, the ART’s basic utility value is to pay for the cost of using the ArcBlock system.  Like a cloud computing service, the ART is a utility token for paying the cost associated with using the service.
 
-<center>![whitepaper](./images/ArcBlockToken.png)</center>
+![whitepaper](./images/ArcBlockToken.png)
 
 Unlike Ethereum or Bitcoin, where users typically pay a fee for each transaction they make, ArcBlock is designed to let application providers pay the transaction fees for their end users. This approach vastly improves the user experience. Developers pay on a monthly basis, enabling them to add up small units and save money.  ArcBlock also request developers to lock in a number of ARC token as a stake when they need to provide mission critical services.
 
@@ -337,7 +339,7 @@ Just like any other Blocklet components, the Blocklets for the token foundation 
 ## Application Tokens
 With ArcBlock, developers can also create their own custom tokens that inherit all of the features of our native token.
 
-ArcBlock makes it easy to build your own economy. Tokens aren’t just for cryptocurrencies, however. They can represent many different things, from user identities, certifications, and documents to real-world entities. ArcBlock enables you to tokenize everything in your application.  
+ArcBlock makes it easy to build your own economy. Tokens aren’t just for cryptocurrencies, however. They can represent many different things, from user identities, certifications, and documents to real-world entities. ArcBlock enables you to tokenize everything in your application.
 
 In the near future, you'll be able to make initial coin offers (ICOs) with ArcBlock’s application token once you've built and deployed your applications with ArcBlock.
 
