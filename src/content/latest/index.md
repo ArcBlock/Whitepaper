@@ -307,9 +307,9 @@ The ABT is designed as a general purpose token that can be used in different sce
 
 ![whitepaper](./images/ArcBlockToken.png)
 
-Unlike Ethereum or Bitcoin, where users typically pay a fee for each transaction they make, ArcBlock is designed to let application providers pay the transaction fees for their end users. This approach vastly improves the user experience. Developers pay on a monthly basis, enabling them to add up small units and save money.  ArcBlock also request developers to lock in a number of ARC token as a stake when they need to provide mission critical services.
+Unlike Ethereum or Bitcoin, where users typically pay a fee for each transaction they make, ArcBlock is designed to let application providers pay the transaction fees for their end users. This approach vastly improves the user experience. Developers pay on a monthly basis, enabling them to add up small units and save money.  ArcBlock also request developers to lock in a number of ABT token as a stake when they need to provide mission critical services.
 
-ArcBlock tokens map to ERC20 tokens 1:1. This simplifies token exchanges and allows developers to tie into the Ethereum community. Application developers can take advantage of the existing ecosystem built on the ERC20 token while also leveraging a high-performance and full-featured token service. While this mapping is necessary today, we anticipate that it may become obsolete as the ARC matures and the ArcBlock community grows.
+ArcBlock tokens map to ERC20 tokens 1:1. This simplifies token exchanges and allows developers to tie into the Ethereum community. Application developers can take advantage of the existing ecosystem built on the ERC20 token while also leveraging a high-performance and full-featured token service. While this mapping is necessary today, we anticipate that it may become obsolete as the ABT matures and the ArcBlock community grows.
 
 ## The Miners
 ArcBlock allow contributors (“miners”) to run ArcBlock platform services and join the overall service network. The role of miners within the ArcBlock community is significantly different from that of Bitcoin and Ethereum contributors, however.
