@@ -1,0 +1,11 @@
+sudo: false
+git:
+  submodules: false
+branches:
+  only:
+  - master
+before_script: make init
+script: make build
+env:
+  global:
+    secure: WsOvn3Xtd8VLE+FW8AgORWJB5TLWMAfwYIqQyZ7mruFCq72wNHnbx46FTuBE/AZY1AgCsxLAqWyHApB37/MhXjez3MvbcYYVmNBohjXhCjwkH4Yr5MCIUfW2pHIITf2ZbKJBcNIkSMPzRkV9hoUY9nMU4c409ewwggpuPhgEmbktNBuzanZ/gm+L30lxdhJEJe1H/sN0GCgxFhp1m6pQhVP1oIn6brmC5SR/+IHq2J58N8pCwjwUOuIM/b9ykdTfzKzLHPCdEsB70tagFxnl1GfkcEgKwf9ieMvNBjSLD2kwQUV63zlB3HyxnDwCRKm4+6d2OeGbAZuwabbAUytqxXjkieX0EuQO2jf+58ExghogF59M0k9f+L8r+VJVJNR+rzpiNmbmdUXQqlVuDlC372HPSFRGXaPu36krGJnfsHA6ixWFHz5Yt1xWZvTfY2kaApdYVcKO7GnWsMpf/qeSfDYO8z1Qh/hYPLcP0uQpIcUzKn2mXT4pMmlAlbggAU0afn4GVV+QK1wIX8ktZagapqv0wwObdg2M2igK8E/1xFP2Mj/MvcX+RzsQUuNyEDGlU/RJVlMjKZlaO+JxMF/BOqQTlqFW2m8qajzU0oLL8QWob3gI4oEymtp3dx3WFVLEIFKFkCnrkJTdWg5wJEozTI7FpZMzqyQaEE/m1K5mZic=
