@@ -1,51 +1,82 @@
----
-title: The Token Economy and the Service
----
+# 代币经济服务
 
-# The Token Economy and the Service
-What makes ArcBlock unique is that it’s not just a set of APIs or libraries—it’s a robust platform with a full set of features. In addition, the service runs on top of its own native token system, which is driven by latest blockchain technology. 
+让 ArcBlock 与众不同的是，它不只是一系列区块链开发 API 和库，而是一个拥有一系列配套功能
+的、健壮发展的平台。此外，ArcBlock 服务运行在自己的、采用最新的区块链技术驱动的原生代币体系之上。
 
-## The ArcBlock Token (ABT)
-The ArcBlock Token (ABT) is native to the ArcBlock platform. To achieve high-performance transactions, we built an optimized blockchain dedicated to ArcBlock’s own token services and the public ledger. The design goal is to achieve >100,000 Tx/s, which is more than adequate for a wide range of applications. In the future this blockchain could be improved for broader purposes.
+## ArcBlock 代币 (ABT)
 
-The ABT is designed as a general purpose token that can be used in different scenarios.  Within ArcBlock, the ABT’s basic utility value is to pay for the cost of using the ArcBlock system.  Like a cloud computing service, the ABT is a utility token for paying the cost associated with using the service. 
+ArcBlock 代币(ABT)是 ArcBlock 平台的原生代币。为了支持高性能的交易，我们开发了一个为高性
+能代币系统而优化的区块链技术，专门用于 ArcBlock 自己的代币服务和其公开账本服务。 设计目
+标是能处理每秒 10 万次以上的交易，这将能满足绝大部分应用的需求。未来我们这一区块链技术
+可进一步扩展至其他领域，但第一阶段只用于 ArcBlock 系统本身。
 
-Unlike Ethereum or Bitcoin, where users typically pay a fee for each transaction they make, ArcBlock is designed to let application providers pay the transaction fees for their end users. This approach vastly improves the user experience. Developers pay on a monthly basis, enabling them to add up small units and save money.  ArcBlock also request developers to lock in a number of ABT token as a stake when they need to provide mission critical services. 
+ABT 被设计为一个能应用在各种场景的通用代币。 在 ArcBlock 平台上，ABT 的基本作用是支付
+ArcBlock 服务使用费。和其他一些云服务平台类似，ABT 代币是一种用于支付计算资源和技术资
+源的应用代币。
 
-ArcBlock tokens map to ERC20 tokens 1:1. This simplifies token exchanges and allows developers to tie into the Ethereum community. Application developers can take advantage of the existing ecosystem built on the ERC20 token while also leveraging a high-performance and full-featured token service. While this mapping is necessary today, we anticipate that it may become obsolete as the ABT matures and the ArcBlock community grows.
+![whitepaper](./images/ArcBlockToken.png)</center>
 
-## The Miners 
-ArcBlock allow contributors (“miners”) to run ArcBlock platform services and join the overall service network. The role of miners within the ArcBlock community is significantly different from that of Bitcoin and Ethereum contributors, however.
+和以太坊、比特币等不同，用户使用这些区块链需要为每笔交易支付一小笔交易费，而 ArcBlock
+的设计区别很大： ArcBlock 让应用开发者，而不是最终用户，来支付任何其应用中产生的交易费
+用。 这一设计将能大幅度提升用户体验。应用的开发者按月支付交易费，他们可以累积一笔笔交
+易一次性付费，以此大幅度降低成本。 当应用开发者需要提供一些关键性业务，平台会冻结部分
+ABT 代币作为押金（来确保开发者提供的业务是认真负责的）。
 
-### Resource Miners
-Resource Miners contribute computing resources to the system. They might provide cloud computing resources and run as a cloud node, or contribute self-hosted computing resources. 
+ABT 代币可以和 ERC20 代币进行 1:1 映射。这简化了必要的应用代币交易，并使得开发者可以和
+已经比较成熟的以太坊社区结合。 应用开发者也可以利用以太坊已经比较成熟的建立在 ERC20 之
+上的生态系统，同时获得我们高性能、全功能代币经济体系的服务。 虽然这个映射功能在初期可
+能必需，但我们预期随着 ABT 代币发展成熟、ArcBlock 社区的成长，这一映射价值会逐渐下降。
 
-In ArcBlock’s design, Miners may provide the computing resources for their own use only, share them across multiple parties, or share them with anyone. The choice of model is entirely up to the miner, and can be changed as they need to.
+## 矿工和矿场
 
-### Component Miners
-Component Miners contribute software components to the system, such as  new Chain Adapters, Blocklet Components, or ready-to-deploy applications. The component might be packaged code that can be reused and deployed by another application, or a set of services that's merely exposed through the Blocklet interface. For example, a deep learning-based image recognition service may have its own services running elsewhere, but offer the services as Blocklets so that other ArcBlock applications can use them. 
+ArcBlock 允许和鼓励矿工和矿场来运行和提供 ArcBlock 服务并且加入整个服务网络。 然而，“矿
+工/矿场”在 ArcBlock 所提供的和在比特币、以太坊上的截然不同。
 
-A smart contract defines how the miner’s fee will be distributed if the component is developed by multiple parties. It will also define the rules for how the code for the component is forked. 
+### 资源矿工
 
-## The ArcBlock Marketplace
-The ArcBlock Marketplace is a decentralized blockchain application built on ArcBlock platform itself. The app serves as a marketplace for listing, searching, evaluating, using, and ranking reusable components, such as Chain Adapters, Blocklets Components, and applications. 
+资源矿工为系统提供的是计算资源。他们可以提供云服务资源来运行 ArcBlock 的云节点，或者提
+供自己接入的计算环境来运行 ArcBlock 节点。
 
-The marketplace is also responsible for maintaining public feedback about the quality of components and the reputation of their developers, as well as other information. This information will help users evaluate reusable components. All the marketplace information are recorded in the public ledger powered by ArcBlock’s blockchain technology to ensure transparency and the trust. 
+ArcBlock 的设计中，资源矿工可能觉得自己的计算资源是只有自己可用，还是可以多方共享使
+用，抑或让任何 ArcBlock 用户使用。 采用何种模式完全由资源矿工决定，并且可以灵活改变。
 
-## Token Foundation Services
-The platform’s token foundation services consist of a set of Blocklet components that lay the groundwork for ArcBlock’s token services. 
+### 组件矿工
 
-The ArcBlock token is implemented entirely with Blocklet. The token foundation service is also powered by Blocklets, and the Token Economy Service consists of a group of Blocklet Building Blocks. Application developers can use Blocklet to easily handle events triggered by tokens and accomplish complex business logic. The distributed ledger in ArcBlock ensures that your tokens are secure, high performing, and reliable. 
+组件矿工为系统提供的是计算软件的组件，例如一个新的链适配器、一个 Blocklet 组件，甚至是
+一个完整、可以部署的应用。 这些组件可以是一个可以重用或部署的代码库，也可以是一个以
+Blocklet 作为接口而提供服务的系列服务。 例如，一个基于深度学习的图像识别服务可能运行在
+自己的一个服务系统中，但也可以 Blocklet 的形式提供，成为其他 ArcBlock 应用使用的部件。
 
-Just like any other Blocklet components, the Blocklets for the token foundation service can also be improved and extended by the blockchain community . 
+如果组件是由多方共同开发（例如共同开发，或者在过去版本上改进）获得的成果，将通过智能
+合约确定收益的分配比例。 智能合约也可以定义一个组件是否允许被别人分叉而改进，以及分叉
+后的收益如何分配等。
 
-## Application Tokens 
-With ArcBlock, developers can also create their own custom tokens that inherit all of the features of our native token. 
+## ArcBlock 市场
 
-ArcBlock makes it easy to build your own economy. Tokens aren’t just for cryptocurrencies, however. They can represent many different things, from user identities, certifications, and documents to real-world entities. ArcBlock enables you to tokenize everything in your application.  
+ArcBlock 市场是基于 ArcBlock 平台本身的一个去中心化交易市场应用，其作用是为 ArcBlock 提供
+一个可以排列、搜索、评估、使用、评价可重用部件，例如链适配器，Blocklet 组件和应用的市场。
 
-In the near future, you'll be able to make initial coin offers (ICOs) with ArcBlock’s application token once you've built and deployed your applications with ArcBlock.
+这个市场也记录维护系统用户对各个可重用部件关于质量的反馈以及其开发者的信誉。这些信息
+能帮助用户评估可以重用的部件。所有市场的数据都被记录在一个系统的公开账本之上，这个公
+开账本由 ArcBlock 自己的区块链技术支持，以保证这些市场数据的透明和可信。
 
+## 代币基础服务
 
+代币基础服务包含一系列 Blocklet 组件来实现最基础的代币服务所需要的各种功能。
 
+ArcBlock 的代币完全采用 Blocklet 来实现。 代币基础服务也就是一组 Blocklet，代币经济服务包含
+一组可重用的 Blocklet 组件。 应用开发者可以用 Blocklet 来非常容易地处理由代币触发的事件并完
+成各种复杂的商业逻辑。ArcBlock 的原生分布式账本确保任何和代币相关的交易安全、高速和可靠。
 
+和其他的 Blocklet 组件一样，ArcBlock 社区可以对代币基础服务的 Blocklet 进行改进和贡献，一起
+推动代币基础服务的进步。
+
+## 用户应用代币
+
+在 ArcBlock 平台上，开发者也可以创建自己的用户代币，并且直接集成我们原生代币的全部特性。
+
+ArcBlock 让你轻松建造自己的代币经济体系。我们的“代币”概念并不只是加密货币，而是可以代
+表任何东西的通证，从用户标识，证书，文档到现实世界中的各种实体。 ArcBlock 让你的应用支
+持代币化变得前所未有的容易。
+
+在不久的将来，我们还将允许通过 ArcBlock 来开发和部署应用的开发者进行首次代币发行（ICO）。

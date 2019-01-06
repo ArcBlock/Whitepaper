@@ -1,17 +1,24 @@
----
-title: Introduction
----
-# Introduction
+# 概要
 
-## Purpose
-The purpose of this document is to provide a high-level technical overview of the ArcBlock platform. It assumes that the reader has a basic understanding of cloud computing, decentralized applications, and blockchain technology. A list of resources is provided for those who would like to develop a foundational understanding of blockchain technology. 
+## 目的
 
-## Scope
-This document provides a technical overview of ArcBlock, a blockchain ecosystem for building and deploying decentralized applications. It describes core elements of the service and provides details about the architectural design of critical components.
+本技术白皮书旨在对“区块基石”（ArcBlock）服务平台进行高层技术概要介绍，读者需要对云
+计算、去中心化应用和区块链技术有基本了解才易于理解本文内容。白皮书在文末提供了系列相
+关资源和文献帮助读者建立对区块链技术的基础理解。
 
-The information in this document is intended for informational purposes only. ArcBlock may make improvements or changes to the products, architectural design, or programs described in this document at any time without notice.
+## 范围
 
-## Related Documents
-ArcBlock Official Website: https://arcblock.io<br>
-ArcBlock Technical White Paper: https://arcblock.io/whitepapers/technical.pdf<br>
-ArcBlock Business White Paper: https://arcblock.io/whitepapers/tokensale.pdf<br> 
+本技术白皮书提供对“区块基石”（ArcBlock），一个为开发和部署去中心化应用而设计的服务
+平台和生态系统的技术概要介绍。 本文描述了其核心组件并详细介绍了其架构设计及关键部件设
+计细节。
+
+本文档仅为外界了解该系统提供必要的信息。我们可能在不事先通知的情况下对本文描述的产
+品、系统架构或程序进行修改或改进。
+
+本文档是对英文版技术白皮书的中文翻译，尽管我们尽量保证精确性但仍可能与英文版本存在微
+小偏差，如果本文内容和解释出现和英文版的区别则以英文版本为基准。
+
+## 相关文档
+
+“区块基石”官方网站: https://arcblock.io<br>
+“区块基石”技术白皮书（本文）: https://arcblock.io/whitepapers/technical.pdf
