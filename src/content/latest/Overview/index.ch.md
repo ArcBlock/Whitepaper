@@ -1,78 +1,153 @@
----
-title: Overview
-weight: 2
----
+# 前言
 
-# Overview
+“区块基石”（ArcBlock）是一个专门用于开发和部署去中心化区块链应用的服务平台和一个多方
+参与形成的生态系统。ArcBlock 不仅提供基础部件服务以方便使用区块链，而且能比今天的区块
+链系统支持更复杂的商业逻辑。它能帮助您将已有的系统和服务与区块链建立连接，使得你可以
+把现有业务的数据、用户、商业逻辑等应用在区块链驱动的新应用之中。
 
-## Problems with Today’s Blockchains
-Blockchain technology is still in its infancy. There are many issues preventing developers and businesses from creating widespread, decentralized blockchain applications. 
+“区块基石”平台首要目标是解决目前区块链应用领域的几个普遍存在的、阻碍区块链技术得以在
+公众范围内普及应用的问题。我们对 ArcBlock 引入的独特创新可能推动整个区块链技术加速前进
+充满信心。
 
-### Poor Performance
-Performance is one of the main challenges facing current blockchain technology. The blockchain that Bitcoin uses is designed to handle seven transactions per second, and Ethereum can only handle a few more. As of December 2017, a simple CryptoKitties  application can slow Ethereum and increase transaction fees dramatically. 
+## 今天区块链面临的问题
 
-Today’s consumer applications must be able to handle tens of millions of active users on a daily basis. In addition, some applications will only become meaningful when critical mass is reached. The platform itself must be able to handle a large number of concurrent users. 
+今天的区块链应用仍处于“婴幼儿期”，有许多问题阻碍了开发者和企业在区块链上创建能够广泛
+传播的去中心化区块链应用，兹列如下：
 
-A good user experience demands reliable feedback with only sub second delays. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+### 性能低下
 
-### Not Consumer Friendly
-Today’s blockchain applications are built for the few tech whizzes who know how to use them, rather than mainstream consumers. Nearly all blockchain applications require users to either run a blockchain node or install a “light node." The learning curve and effort involved has delayed adoption among the general public.
+性能低下，是今天的区块链技术面临的核心挑战之一。 比特币的区块链被设计成每秒处理 7 笔交
+易， 以太坊只能处理每秒几十笔。2017 年 12 月初，一个简单的“以太猫”（CryptoKitties1
+）游戏
+就给以太坊（Ethereum）网络造成大规模拥塞并导致交易费（gas）激增。
 
-For example, while the Ethereum-based game CryptoKitties is probably the most user-friendly decentralized app ever built, it still requires the user to install the Metamask light wallet  browser extension. Users also need to know how to buy ethers securely and use them with Metamask. 
+而今天一个合格的消费者应用必须能够处理数以千万计的日活跃用户。更重要的是，有一些应用
+必须到达一个足够大的用户临界点才会有实用价值。支撑这些应用的平台必需具备处理大量并发
+用户的能力。
 
-To attract large numbers of people, blockchain applications need to be as simple as today’s web and mobile apps. Blockchain technology should be completely transparent to the consumer. 
+良好的用户体验需要秒级内甚至毫秒级的可靠反馈。延迟令用户迷惑，导致今天的区块链应用无
+法与传统的非区块链应用竞争。
 
-### Cost
-The extremely high cost of using blockchain technology is a major barrier to mainstream adoption. It also limits developers who need the flexibility to build free services. Just like today’s web and mobile apps, users shouldn’t have to pay for every minor action. Similar to the Internet, blockchain technology should be able to support free applications.
+### 非消费者友好
 
-Making blockchain free to use is key to widespread adoption. A free platform will also empower developers and businesses to create valuable new services they can monetize, rather than having users pay fees to use the blockchain network. 
+今天的区块链应用还只是为知道如何使用的极少数极客用户而造，而非面向主流的消费者用户。
+几乎所有区块链应用都需要用户在自己的计算机端运行一个“节点”或至少安装一个“轻节点”才能使
+用， 学习使用成本高昂导致区块链应用难以在普通大众普及。
 
-### Platform Lock-In
-As with the early days of any computing technology, blockchains have critical “platform lock-in” problems. Developers have to decide which blockchain to support, then implement platform-specific code that makes it very difficult to switch an application to a different blockchain later on. 
+举例而言，“以太猫”可能是迄今出现对用户最为友好的去中心化区块链应用了，它仍需要用户在
+浏览器安装 Metamask2
+这个轻钱包插件才能使用，同时用户必须知道如何买到以太币以及如何适
+应和使用 Metamask 插件界面才能使用。
 
-Developers don’t want to be locked into working with a certain blockchain technology. They need the freedom to evaluate, use, and switch between options. Some applications may even need to run on multiple platforms to provide the best user experience.  
+要吸引大量用户使用，区块链应用必须和今天常见网页和移动端应用一样简单好用。对消费者而
+言，区块链技术本身应该是完全透明的。
 
-### Lack of Features
-People have high expectations for blockchain—the news media, evangelists, and journalists paint a bright future for decentralized applications for the public, especially with the increasingly high prices of cryptocurrencies.  In reality, however, blockchain technology is still in its infancy. Most blockchain services lack rich features and don’t have a mechanism to encourage the community to contribute to the feature stacks.  
+### 使用费高昂
 
-Blockchain protocols make them very easy to fork, and there's been a recent spike in forks created for various purposes. Unfortunately, forks typically only improve on the forked branch, splitting the community and computing resources. The incentive mechanisms for blockchains just aren't designed to encourage contributions to the blockchain tech stack yet. 
+今天使用区块链费用非常高昂，也是阻碍主流大众接受采用区块链技术的一大主因。这还限制了
+开发者创建免费应用的灵活性，正如今天的网页和移动端应用一样，用户不需要为每一个动作和
+请求单独付费。如同今天的互联网，区块链技术应该能够支持免费应用。
 
-## The ArcBlock Platform  
-ArcBlock solves these problems through its revolutionary new design. Unlike its predecessors, ArcBlock is a <strong>platform service</strong>, rather than a standalone software package or set of APIs. ArcBlock is a comprehensive solution that combines blockchain technology with Cloud Computing.
+让区块链可以免费使用，是区块链技术广泛传播普及的关键。能够提供免费服务的平台让开发者
+和企业有动力提供更好更创新的应用来让用户付费，而不是让他们为基本的区块链操作来付费。
 
-ArcBlock is an <strong>incentive-driven marketplace</strong> for reusable services, components, and even applications. <strong>“Miners”</strong>  in ArcBlock platform not only bring computing resources, more over they help to build the platform together by providing reusable components, new services, and even ready to deploy applications.  People who contributed resources or services will be rewarded with tokens to form a positive, self-growing platform that continues to evolve on its own. The ArcBlock platform service isn’t our creation alone. It’s developed by the entire ArcBlock community—we’re just kick-starting a new blockchain revolution.  
+### 平台“锁定”风险
 
-ArcBlock’s introduction of the <strong>Open Chain Access Protocol</strong> enabled open connectivity over multiple blockchain protocols. Developers now have the freedom to evaluate blockchain protocols, and even switch back and forth between them. The Open Chain Access Protocol makes it easy to implement new blockchains as the technology evolves. It eliminates the platform lock-in issue and enables applications to run on multiple blockchain fabrics, vastly improving the developer and user experiences. 
+和很多早期计算机技术发展过程类似，现在的区块链存在严重的“平台锁定”问题。开发者不得不
+为支持哪种区块链实现技术而做出选择，应用的设计和代码被开发初期选择的区块链平台“锁定”
+，导致未来难以灵活更换。
 
-<strong>Blocklet</strong> is another revolutionary component that takes advantage of the latest microservice architecture and serverless computing technology. Blocklet is a high-level application protocol that can be implemented with any platform or language. It leverages the full capacity of the native platform and offers the same level of performance, rather than running on a low-performing virtual machine.
+应用开发者不希望他们的应用锁定在特定的区块链技术上，他们需要自由选择的权利，能自由地
+评估、使用和切换最适合自己业务的技术基础。一些应用有时也需要能支持多种不同底层技术来
+为自己的用户提供最佳体验。
 
-Blocklet does more than access blockchains. It connects to any existing data source, and performs both on-chain and off-chain computing.
+### 功能匮乏
 
-Our unique design aims to provide a high-performance, user-friendly, cost efficient, and protocol-agnostic platform. We believe that ArcBlock represents a major technological advance that will usher in the 3.0 generation of blockchain applications.
+今天在媒体和布道先驱者为去中心化区块链应用描绘了光明的未来，尤其是最近数字加密货币价
+格屡创新高的背景下，公众对区块链技术抱有极高的期望。 然而，现实是今天的区块链技术仍处
+于“婴幼儿”期，绝大多数区块链应用缺乏足够的功能而且没有一个有效机制推动社区来贡献这些
+缺乏的功能。
 
-![my img](./Roadmap_blockchain3.0.png)
+区块链协议一个特点是分叉比较容易，最近出于各种动机对区块链进行硬分叉的现象此起彼伏。
+然而，这些硬分叉对区块链的功能贡献微小，反而分散了计算资源、割裂了用户社区。今天各种
+区块链系统的内在激励机制设计没有鼓励人们对链技术和特性进行贡献。
 
-## ArcBlock’s Advantages
-In addition to solving the common problems outlined above, building and deploying decentralized blockchain applications with ArcBlock has significant advantages over the vendor-specific frameworks available in today’s market.  
+## “区块基石”平台
 
-### Built for the New Token Economy 
-ArcBlock is a self-evolving ecosystem—not just a software platform built by one centralized organization. We at ArcBlock, Inc. and the ArcBlock Foundation are only jump starting the project; the platform will continue to develop and grow on its own. 
+“区块基石”（ArcBlock）平台通过创新的革命性设计来解决上述问题。不同于其他类似产
+品，ArcBlock 是一个完整的<strong>平台服务</strong>，而不是一些软件包或包裹性 API 集合。它是一个结合了区
+块链和云计算技术的完整解决方案。
 
-The entire ArcBlock service is driven by the token economy.  Rather than a basic service platform, ArcBlock is an economy driven by incentives that  encourage the blockchain community to work together to build a better ecosystem. 
+ArcBlock 更是提供一个内在激励机制驱动的<strong>功能模块和应用市场</strong>，从而形成一个生态体系。
+ArcBlock 里的<strong>“矿工”</strong>可以提供的，不仅仅是计算资源，而且可以提供的是可重用的模块、新的服
+务甚至是可以直接部署使用的应用。 这些提供功能和应用的<strong>“矿工”</strong>在自己的服务被使用时就会获
+得代币奖励，从而形成一个能够不断完善、自我成长的服务平台。 ArcBlock 服务平台并不只是我
+们单独创建的，而是由整个社区一起来开发创建的，我们只是最初推动的一群人而已。
 
-### Optimized for the Best Experience
-We built the ArcBlock platform using a “top-down” strategy that centers on the user experience. In contrast, many existing solutions focus on the blockchain technology itself at the expense of user friendliness. Applications built with ArcBlock offer reactive, real-time experiences. Users can simply access them from a web browser (no additional plugins required), or download a mobile app directly from an app store. Either way, the process is familiar.
+ArcBlock 引入了<strong>“开放链访问协议”</strong>（Open Chain Access Protocol），这使得应用可以通过
+它连接多种不同的区块链协议。 开发者将重新拥有方便评估不同区块链协议的自由，甚至可以在
+不同的区块链协议之间方便地切换。 当区块链技术本身发生演化时，确保应用能轻松跟随新区块
+链技术一起演进。“开发链访问协议” 消除了现存区块链技术的“平台锁定”风险，并能让一些
+区块链应用跨链而造，大幅度提升开发者和用户的体验。
 
-ArcBlock also dramatically improves the developer experience. There’s no need to deal with low-level blockchain protocols. With our mock blockchain adapters, engineers don’t even have to run local blockchain test nodes to start developing and testing their applications. 
+<strong>“基石程序” （Blocklet）</strong>是另一项革命性设计，它吸收了<strong>最新的微服务（Microservice）</strong>架构和
+<strong>无服务器计算方式（Serverless Computing）</strong>的优势。 Blocklet 是一种高层应用协议，可以
+在任何平台上以任何语言来实现，这使它可以充分利用平台和语言的原生特性而获得远优于虚拟
+机运行的最佳性能和开发体验。通过前面说明的“开发链访问协议”，Blocklet 可以和区块链通信。
 
-### Built for the Cloud 
-ArcBlock is designed to run natively in the cloud. It can also run on a single computer for testing and development. 
+Blocklet 不止是连接区块链协议，也可以访问任何外部数据源，因此它能完成链上和链下的两种计
+算方式并且将它们联系起来。
 
-This design principle makes ArcBlock fundamentally different from many other platforms in the blockchain world. In ArcBlock, a node can be a “logical computer” comprised of one or more virtual machines, or a group of cloud services working together as a computing environment. This approach marks a significant step forward that will help elevate blockchain and decentralized applications to the next level, including our patent pending technologies.
+由此可见，我们上述设计旨在致力于打造一个<strong>高性能、用户友好、成本经济、不被现有特定区块
+链协议锁定</strong>的应用服务平台。我们相信 Blocklet 的设计思想代表下一代区块链 3.0 应用的主流模
+式。
 
-ArcBlock will initially build on top of AWS and Windows Azure, then expand to support Google Compute Engine, major cloud computing players in China, and other platforms. 
+![whitepaper](./images/RoadmapTowardBlockcahin3.0.png)</center>
+_<center><h3>图: 区块链技术的演进路线图</h3></center>_
 
-### Built with an Open Standard
-ArcBlock is built with an open standard. We’re trying our best not to reinvent the wheel and to build for the application developer’s wants and needs. In addition to open sourcing our core components, we will also actively contribute to a variety of blockchain technology communities. 
+## “区块基石”平台的优势
 
-Our team members are actively involved with a range of standards organizations, non-profit foundations, and committees. These currently include the W3C Blockchain Community Group Community Group, IEEE Standard Association’s Blockchain Community, Enterprise Ethereum Alliance, Linux Foundation, and Hyperledger Foundation. This list will expand over time. 
+除了解决上述普遍问题，与市场那些和特定区块链紧密绑定的方案相比，通过 ArcBlock 平台来开
+发和部署区块链应用还拥有显著的优势。
+
+### 面向代币经济体系的设计
+
+ArcBlock 是一个自我进化的系统，而不只是一个中心化组织搭建的软件平台。 我们只是作为平台
+的最初创造和推进者在起步之初推动其发展，在未来它是在社区的支持下一起成长进化的。
+
+整个 ArcBlock 平台服务由代币经济驱动。超越基础的软件平台，ArcBlock 平台是鼓励区块链社区
+共同营造理想的生态系统的激励机制推动成长的经济体。
+
+### 为最佳用户体验而优化
+
+ArcBlock 平台采用“自上而下”的设计策略，始终把最终用户体验放在中心置。相比之下，现有大
+部分与特定区块链技术绑定的开发系统往往是从底层区块链“能提供什么”而出发牺牲了良好的用
+户体验。 利用 ArcBlock 平台开发的应用能够提供实时、响应式（Reactive）用户体验，用户可以
+通过习以为常的网页浏览器或移动 App 来使用区块链。
+
+ArcBlock 平台还将大幅度提升开发者体验。开发者不需要去摸索评估各种不同的区块链底层协
+议，通过我们提供的模拟区块链适配器，开发者甚至不需要安装运行任何区块链测试节点就可以
+开发、测试自己的区块链应用。
+
+### 为云计算时代而设计
+
+ArcBlock 被设计成云计算环境原生平台。当然，在测试和开发环境下，它也可以运行在单机上。
+
+这种设计使得 ArcBlock 和很多“原教旨主义”的区块链平台有些格格不入，然而这才是我们认为的
+未来。在 ArcBlock 中，一个区块链节点是一个“逻辑上的计算机”，它可能是一台或多台虚拟机，
+或者一组云计算资源共同组合形成的“逻辑上的计算机”。 这种设计使得我们把区块链技术、去中
+心化应用的概念推向一个新高度 (这些设计包含我们若干专利技术)。
+
+ArcBlock 首先会构建在亚马逊的 AWS 和微软的 Windows Azure 之上，然后我们计划扩展对 Google
+的云计算引擎的支持，并在将来支持中国的主要云计算平台。
+
+### 坚持开放标准
+
+ArcBlock 设计坚持开放标准的原则，决不“闭门造车”，而是应开发者需求而设计。 我们不但采用
+开源方式提供核心部件，而且积极加入各个区块链技术社区，积极参与讨论和贡献。
+
+我们的团队成员、公司还加入了一系列标准组织、学术机构和基金会等会员组织，包括
+W3C 区块链社区组织（W3C Blockchain Community Group），IEEE 标准委员会区块链社
+区 （IEEE Standard Association Blockchain Community），企业以太坊联盟（Enterprise
+Ethereum Alliance），Linux 基金会（Linux Foundation）和 Hyperledger 基金会（Hyperledger
+Foundation）等。这个社区积极参与和贡献清单还会随着时间继续增长。

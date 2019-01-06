@@ -1,63 +1,95 @@
----
-title: Architecture
----
+# 体系结构
 
-# Architecture
-ArcBlock aims to build a scalable, extensible, and easy-to-use platform for building and deploying decentralized blockchain applications. 
+ArcBlock 旨在被设计为一个<strong>可伸缩、可扩展</strong>并且<strong>容易使用</strong>的开发和部署去中心化区块链应用的平
+台。
 
-## Design Principles 
-ArcBlock’s design is based on following core principles: 
-	-	The user experience comes first.  
-	-	Performance matters. 
-	-	The system will be built on an open standard.
-	-	The system will build upon an Incentive-driven economy. 
+## 设计原则
 
-## System Architecture
-The ArcBlock platform introduces a suite of revolutionary technologies designed to mainstream blockchain applications by making them easy for the average consumer to use.
+ArcBlock 设计中始终遵循以下几个核心原则：
 
-![my img](./HighLevelOverviewofArcBlock.png)
+- 用户体验至上
+- 性能优先
+- 坚持开放标准
+- 内置激励机制，建立经济循环
 
-### Open Chain Access Protocol 
-Our open source protocol provides an abstract layer for accessing underlying blockchains. Similar to an ODBC or JDBC interface to a set of databases, our Open Chain Access Protocol enables your application to work on different blockchains. There’s no need to alter your business logic or work with multiple chain technologies. 
+## 系统架构
 
-Chain Adapters can be built by the community and encouraged by the incentive mechanism. This will enable ArcBlock to support many blockchain protocols and continue to improve.
+ArcBlock 引入一系列革命性技术创新引领区块链技术普及、应用走向消费者用户友好。
 
-### Blocklet 
-Blocklet is a serverless computing architecture component for running various types of applications. Use Blocklet for smart contracts, oracle, resource and asset handling, and off-chain business logic. Blocklet communicates with blockchains through ArcBlock’s Open Chain Access Protocol, and can be orchestrated with our Algorand-based consensus algorithm. 
+![whitepaper](./images/HighLevelOverviewArcBlock.png)</center>
+_<center><h3>图: ArcBlock 的高层概要架构图</h3></center>_
 
-Anyone can use Blocklet to build services and components and contribute them under the incentive system. Community members will receive tokens when others use their contributions.   
+### 开放链访问协议
 
-### Blocklet Components 
-Blocklet Components are pre-built blocklets that form the foundation of the ArcBlock platform. Most of ArcBlock’s features (such as its token services, user identity services, etc.) are implemented with them. Blocklet Components are highly reusable and customizable. 
+这是一个开源的协议用于提供一个访问下层区块链的抽象接口层。 类似于在数据应用中的 ODBC
+或 JDBC 在和各种不同数据库之间的关系一样，我们的开放链访问协议让你的应用可以在不同的
+区块链上工作。 在切换不同的底层区块链、或者使用多条不同协议的区块链的时候，你甚至不需
+要更改你的业务逻辑代码。
 
-Incorporate our pre-built Blocklet Components into your applications to get up and running fast. We provide components for user identity management, utility tokens, wallets, messaging, notification services, and more. Use them out-of-the-box, or as customizable starting points for your own creations.  
+链适配器可以由社区成员自己开发并在系统市场发布供他人使用并获得代币奖励，这一设计使得
+我们会拥有很多社区创建的、并不断改进的链适配器。
 
-Blocklet Components can also be built and contributed by the community. They are managed through the ArcBlock Marketplace app. 
+### 基石程序（Blocklet）
 
-### Decentralized Pub/Sub Gateway 
-A distributed messaging system supports pub/sub and acts as an API gateway for Blocklets. ArcBlock's gateway uses a decentralized design and secure communication channels. Your applications will run in both web browsers and mobile apps, giving users reactive, real-time experiences. 
+基石程序是运行各种应用的无服务器计算架构组件。 你可以采用 Blocklet 来实现区块链上的智能
+合约（smart contract）、外部事务触发器（oracle），访问外部的资源，如文件、数据库等其他
+数据源，以及完全和链无关的业务逻辑。基石程序采用开放链访问协议与区块链通信，并可与我
+们的 Algorand 为基础的共识算法结合。
 
-The gateway supports various network protocols by default, including WebSocket, DDP,  HTTPS, and MQTT. Advanced developers can extend  the gateway with new network protocols to fit their needs. 
+基石程序是由社区成员受代币激励创建贡献的主要服务或部件。
 
-### Marketplace and Token Economy
-ArcBlock comes with a fully customizable token economy manager for apps built on the platform. Applications can even build unique utility tokens that inherit all ArcBlock features. 
+### 基石构件（Blocklet Components）
 
-The ArcBlock Marketplace is a native application built on ArcBlock to allow the community contribute and exchange reusable components (e.g. Chain Adapters, Blocklets, or even applications) .
+“基石构件”（Blocklet Components）是一组事先构建好、奠定整个 ArcBlock 系统基础的部件，大
+部分 ArcBlock 的功能（例如代币服务、用户认证体系等）都是用这些构件来实现。 基石构件被设
+计为高度可重用和可定制。
 
-The diagram below shows a high-level view of the platform architecture. Detailed descriptions of some of the core components appear in the next section. 
+采用组件化的方式来开发区块链应用可以使得应用建立变得轻松而容易。 我们提供一系列基础部
+件，包括但不仅限于用户身份管理，应用代币体系，应用代币钱包，实时消息和通知服务等。应
+用可以直接使用这些组件或对其定制化。
 
-## Cloud Nodes
-While using a group of cloud services as a node may seem like an unusual approach, a physical computer is simply a group of hardware components that work together (CPU, memory, external storage, bus, network interfaces) in one box. Aside from how the components are distributed and communicate with each other, they're essentially the same. ArcBlock is the first blockchain platform to treat cloud services as nodes, achieving a much higher level of abstraction, enhanced performance, and even better security.  We believe this approach will likely become the de facto standard for future blockchain platform design, and we as a pioneer will lead the trend as technology evolves. 
+基石构件同样也可以由社区用户创建贡献， 在 ArcBlock 的模块和应用市场里提供给他人使用。
 
-Although ArcBlock’s preferred node is a cloud node, you can still run ArcBlock in a single traditional node like a server box. In a test or private environment, developers likely run the node locally, or in their test server boxes. 
+### 分布式订阅网关
 
-Using a cloud node won’t compromise the decentralization and security of the system. In fact, it takes decentralization and security to the next level.
+这是一个分布式的消息系统能够支持订阅/发布的实时消息服务，并能作为一个基石程序的 API 网
+关。 ArcBlock 的应用网关采用去中心化的设计和安全的消息通信频道设计。应用程序可以在浏览
+器和移动 App 内和网关通讯，为最终用户提供实时、响应式用户体验。
 
-The cloud platform’s own security is enforced by cloud service providers. Most likely, the servers and services from a cloud service provider will be more secure and reliable than self-hosting servers, and far more secure and reliable than peer-to-peer connected nodes from homes or mining farms. 
+应用网关支持多种不同的网络协议， 默认支持的协议包括 WebSocket， HTTPs，DDP 和 MQTT
+等。高级开发者可以自己扩展新的网络协议以使用其应用需要。
 
-The decentralization aspect of using a cloud node is even more interesting, since a cloud node is likely a distributed service that runs on multiple servers from multiple availability zones, or even different regions. In the future, cloud nodes could be offered by various providers and cloud computing vendors. Some may even be self-hosted mining service providers.  This makes the system much more decentralized indeed. 
+### 部件应用市场和代币经济
 
+ArcBlock 包含一个用户可以在平台上定制的代币经济服务体系,应用开发者可以创建自己的代币，
+并可使用我们代币经济系统的所有功能。
 
+ArcBlock 部件和应用市场是一个基于平台自身构建的原生应用，社区用户可在市场里贡献交易可
+重用的部件（例如：链适配器、Blocklet 部件、甚至是可以直接部署的应用）。
 
+上述架构示意图展示了 ArcBlock 平台的高层体系架构设计。 本文以下章节还将更具体地介绍核心
+部件的设计概要。
 
+## 云节点
 
+将一组云端的服务作为一个“节点”来处理，这一设计今天看来有些不同寻常。然而，今天大家熟
+知的一台计算机，其实也是一组内部连接的部件（如 CPU，总线，内存，外存，网络接口等）组
+装在一个盒子里工作。两者本质相同, 只是各个部件分布与通讯方式不同。ArcBlock 是世界上第一
+个把云服务作为节点的设计，这使得我们可以取得更高层次的系统抽象、超高的计算性能和更好
+的安全性。 我们相信，这一设计会成为未来几年区块链平台设计的主流方式，我们作为先驱将引
+领这一区块链技术演进趋势。
+
+尽管 ArcBlock 建议的部署和运行方式是云节点的方式，但我们并不阻止采用传统的单机节点的方
+式来加入。 在开发环境下和私有部署环境下，开发者完全可以采用单机节点的方式来部署。
+
+使用云节点不会削弱系统及其应用的去中心化特性和安全性。相反，它把去中心化和安全提高到
+了一个全新的高度。
+
+云计算平台的自身安全性是云计算平台提供商的提供的服务和保障之一。 大部分情况下， 云计
+算平台提供的服务器和服务要比自建服务器安全性要高，比直接从家庭网络或非专业矿场提供的
+计算节点要安全很多。
+
+从去中心化角度来看云节点的应用会更有意思：因为云节点往往是由分布式的服务构成的，这
+些分布式服务往往可能是通过多个不同的来自不同地区（Region）和不同可用域（Availability
+Zone）的服务器来提供的。 在未来，当云节点可以支持多个不同的云计算服务提供商，一些用户
+也可能自建更专业的类似 IDC 的矿场来加入服务，这使得服务的去中心化程度达到一个新高度。
