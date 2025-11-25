@@ -1,0 +1,83 @@
+# Project information for documentation publishing
+projectName: Whitepaper
+projectDesc: Technical Whitepaper for ArcBlock
+projectLogo: https://avatars.githubusercontent.com/u/33216411?v=4
+
+# AI Thinking Configuration
+# thinking.effort: Determines the depth of reasoning and cognitive effort the AI uses when responding, available options:
+#   - lite: Fast responses with basic reasoning
+#   - standard: Balanced speed and reasoning capability
+#   - pro: In-depth reasoning with longer response times
+thinking:
+  effort: standard
+
+# =============================================================================
+# Documentation Configuration
+# =============================================================================
+
+# Purpose: What's the main outcome you want readers to achieve?
+# Available options (uncomment and modify as needed):
+#   getStarted       - Get started quickly: Help new users go from zero to working in <30 minutes
+#   completeTasks    - Complete specific tasks: Guide users through common workflows and use cases
+#   findAnswers      - Find answers fast: Provide searchable reference for all features and APIs
+#   understandSystem - Understand the system: Explain how it works, why design decisions were made
+#   solveProblems    - Troubleshoot common issues: Help users troubleshoot and fix issues
+#   mixedPurpose     - Serve multiple purposes: Comprehensive documentation covering multiple needs
+documentPurpose:
+  - completeTasks
+
+# Target Audience: Who will be reading this most often?
+# Available options (uncomment and modify as needed):
+#   endUsers         - End users (non-technical): People who use the product but don't code
+#   developers       - Developers integrating your product/API: Engineers adding this to their projects
+#   devops           - DevOps / SRE / Infrastructure teams: Teams deploying, monitoring, maintaining systems
+#   decisionMakers   - Technical decision makers: Architects, leads evaluating or planning implementation
+#   supportTeams     - Support teams: People helping others use the product
+#   mixedTechnical   - Mixed technical audience: Developers, DevOps, and technical users
+targetAudienceTypes:
+  - endUsers
+  - developers
+
+# Reader Knowledge Level: What do readers typically know when they arrive?
+# Available options (uncomment and modify as needed):
+#   completeBeginners    - Is a total beginner, starting from scratch: New to this domain/technology entirely
+#   domainFamiliar       - Has used similar tools before: Know the problem space, new to this specific solution
+#   experiencedUsers     - Is an expert trying to do something specific: Regular users needing reference/advanced topics
+#   emergencyTroubleshooting - Emergency/troubleshooting: Something's broken, need to fix it quickly
+#   exploringEvaluating  - Is evaluating this tool against others: Trying to understand if this fits their needs
+readerKnowledgeLevel: completeBeginners
+
+# Documentation Depth: How comprehensive should the documentation be?
+# Available options (uncomment and modify as needed):
+#   essentialOnly      - Essential only: Cover the 80% use cases, keep it concise
+#   balancedCoverage   - Balanced coverage: Good depth with practical examples [RECOMMENDED]
+#   comprehensive      - Comprehensive: Cover all features, edge cases, and advanced scenarios
+#   aiDecide           - Let AI decide: Analyze code complexity and suggest appropriate depth
+documentationDepth: comprehensive
+
+# Custom Rules: Define specific documentation generation rules and requirements
+rules: ""
+
+# Target Audience: Describe your specific target audience and their characteristics.
+targetAudience: ""
+
+# Glossary: Define project-specific terms and definitions.
+# glossary: "@glossary.md"  # Path to a markdown file containing glossary definitions.
+
+locale: en
+translateLanguages:
+  - zh
+docsDir: .aigne/doc-smith/docs # The directory where the generated documentation will be saved.
+sourcesPath: # The source code paths to analyze.
+  - ./README.md
+  - ./src/content
+# minImageWidth: Only images wider than this value (in pixels) will be used in the page generation.
+media:
+  minImageWidth: 800
+lastGitHead: 45157a87fe048d9763e40169cab7f9ed5f0e5b87
+boardId: whitepaper
+# Checkout ID for document deployment service
+checkoutId: ""
+# Should sync branding for documentation
+shouldSyncBranding: ""
+appUrl: https://bbqa6fhpf6d34dhv6aadz5fqwz7bs6t6kkvv3lhmok4.did.abtnet.io

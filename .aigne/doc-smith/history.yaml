@@ -1,0 +1,16 @@
+entries:
+  - timestamp: 2025-11-25T06:06:48.498Z
+    operation: document_update
+    feedback: 删除归档中中文的链接，因为归档的 pdf 只有英文版
+    docPaths:
+      - /archive
+  - timestamp: 2025-11-25T06:05:07.059Z
+    operation: document_update
+    feedback: 删除开头的 D2 图表，因为下方的图片已经展示了相同的内容
+    docPaths:
+      - /developer-docs/core-components/gateway
+  - timestamp: 2025-11-25T06:03:02.542Z
+    operation: document_update
+    feedback: 删除开头的 D2 图标，因为下方的图片已经展示了相同的内容
+    docPaths:
+      - /developer-docs/core-components/blocklet

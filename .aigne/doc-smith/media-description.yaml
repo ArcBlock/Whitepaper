@@ -1,0 +1,99 @@
+descriptions:
+  eefdef55e320ee1d3ab3f514f7e2c297a1ca832da245790369ff8c19ef349019:
+    path: ../../../src/content/latest/images/OpenChainAccessProtocol.png
+    description: This architectural diagram illustrates the Open Chain Access
+      Protocol, depicting a hierarchical structure. It shows a "BLOCKLET"
+      component, containing an "OPEN CHAIN ACCESS API," interacting with an
+      "OPEN CHAIN ACCESS LAYER" which subsequently connects to multiple "CHAIN
+      ADAPTERS." These adapters then interface with underlying chains,
+      represented by interconnected hexagonal shapes, with double-headed arrows
+      indicating bidirectional communication flow between all layers.
+    generatedAt: 2025-11-25T04:01:40.548Z
+  3ac15eec787abf92b0d98b8316c8677bcf6d79a231dab514a0761cb8636a67ca:
+    path: ../../../src/content/latest/images/BlockLet.png
+    description: This technical diagram illustrates a layered architecture,
+      detailing how "Application Scenarios" like Enterprise and Finance connect
+      with "Offchain Resources" such as databases and medical records. These
+      offchain resources interact with "Blockets," which are then linked in a
+      chain to the underlying "Blockchain" layer. The clean, black-and-white
+      line art clearly depicts the flow and relationships between these
+      components.
+    generatedAt: 2025-11-25T04:01:40.548Z
+  4e87ebdd0cdd2877882eba05c696a92303b2f302cf58023fbf25ba91b9d55e38:
+    path: ../../../src/content/latest/images/SimpleReferenceImplementationNode.png
+    description: 'This grayscale block diagram illustrates a layered software
+      architecture for a messaging or real-time communication system. It
+      features three main layers: a "MESSAGE BACKEND" (showing In-Memory, Redis,
+      and Cluster options), "PUB/SUB SERVICES" (with Channels and Clients), and
+      "PROTOCOL ADAPTERS" (including DDP, TCP, MQTT, and other protocols).
+      Arrows indicate interactions between external entities and the backend and
+      protocol adapter layers.'
+    generatedAt: 2025-11-25T04:01:40.548Z
+  f0c541a11b1a6c3693282fad6a026318c6d9bcf938757165e564037c08444c3d:
+    path: ../../../src/content/latest/images/RoadmapTowardBlockcahin3.0.png
+    description: "This diagram illustrates the evolution of blockchain technology,
+      categorized into three generations: Blockchain 1.0, 2.0, and 3.0. It
+      visually represents the key characteristics and associated platforms for
+      each stage, including Bitcoin for 1.0, Ethereum for 2.0, and ArcBlock for
+      3.0. The image serves as a clear roadmap highlighting the progression of
+      features from basic ledgers to advanced capabilities like smart contracts
+      and cloud-based architecture."
+    generatedAt: 2025-11-25T04:01:40.548Z
+  864a419795efaadefa82aa07f0b80cf4ded65486cbffd65ea4d3640d35b6ac29:
+    path: ../../../src/content/latest/images/HighLevelOverviewArcBlock.png
+    description: This high-level architectural diagram illustrates a decentralized
+      platform's structure, showing how various client applications (web,
+      desktop, mobile) connect to a "Decentralized Pub/Sub Gateway." This
+      gateway interacts with "Blocklets" (contracts and accounts) within the
+      "LODE (Lightweight Objects Decentralization Engine)," which then uses an
+      "Open Chain Access Layer" and adapters to integrate with underlying
+      blockchain networks like Ethereum and Hyperledger. The diagram visually
+      represents a multi-layered, interoperable decentralized system.
+    generatedAt: 2025-11-25T04:01:40.548Z
+  2e128f7756b25cfd4954a24f4f8337c27393706294de1d6e1fbd736201ce2cee:
+    path: ../../../src/content/latest/images/OverviewofTransactionFlowinAlgorand.png
+    description: This diagram illustrates the overview of transaction flow within a
+      blockchain system, emphasizing the "GOSSIP" network for transaction
+      propagation. It depicts pending transactions held by different nodes
+      (represented as laptops), with an example of "TX 5" being sent from a
+      node, through the "GOSSIP" cloud, and distributed to other nodes. The top
+      section visually represents the "BLOCK CHAIN" as a sequence of confirmed
+      transactions.
+    generatedAt: 2025-11-25T04:01:40.548Z
+  f9b458dbbf86b9a344bfa596eba5352db492bf272ef694ecad5f16d17896270c:
+    path: ../../../src/content/latest/images/DecentralizedMessagingandPubSub.png
+    description: This technical diagram illustrates a decentralized messaging and
+      publish-subscribe system architecture. It shows a hierarchical structure
+      with users subscribing to specific channels within various nodes, which
+      then aggregate and route these channels up to super nodes. The connections
+      and data flow between users, channels, nodes, and super nodes are depicted
+      using labeled boxes and directional arrows.
+    generatedAt: 2025-11-25T04:01:40.548Z
+  0db6014e8eb5b332f40cb6229f5d8ea3c9f9427d9d91c5c318fd5101879ea1bd:
+    path: ../../../src/content/latest/images/ClientCommunicationModel.png
+    description: This technical diagram illustrates a client communication model,
+      outlining the architecture from client-side logic up to various data
+      sources. It depicts interactions between client libraries, AWS Lambda, AWS
+      API Gateway, decentralized pub/sub API gateways, and "Blocklets," with
+      connections to external databases, media files, and blockchains,
+      emphasizing secured communication.
+    generatedAt: 2025-11-25T04:01:40.548Z
+  dd8034de022c95c922de461fca1e8417fee8b3171a149d663736597200bb0c29:
+    path: ../../../src/content/latest/images/ArcBlockToken.png
+    description: This black and white line art diagram illustrates the layered
+      structure of a token economy, centered around "BLOCKCHAIN" with a chain of
+      hexagons. Concentric circles expand to "TOKEN SERVICES" and "TOKEN
+      ECONOMY," populated by various 3D cube icons representing components or
+      assets. An outer dotted ring depicts users and dollar signs, indicating
+      interactions and financial flows within the ecosystem.
+    generatedAt: 2025-11-25T04:01:40.548Z
+  e3761487224d541dc468d1e9b43a8c791583beb067329f622006c7ace7830048:
+    path: ../../../src/content/latest/images/APIGateway.png
+    description: This black and white line art diagram illustrates a decentralized
+      system architecture. It depicts various client devices such as browsers,
+      PCs, iOS devices, and IoT devices connecting to a central "Decentralized
+      Pub/Sub Gateway." This gateway then interacts with "Blocklet" components,
+      providing a visual representation of data flow and connectivity within a
+      distributed network.
+    generatedAt: 2025-11-25T04:01:40.548Z
+lastUpdated: 2025-11-25T04:01:40.550Z
