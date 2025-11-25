@@ -68,16 +68,17 @@ locale: en
 translateLanguages:
   - zh
 docsDir: .aigne/doc-smith/docs # The directory where the generated documentation will be saved.
-sourcesPath: # The source code paths to analyze.
+sourcesPath:
+  # The source code paths to analyze.
   - ./README.md
   - ./src/content
 # minImageWidth: Only images wider than this value (in pixels) will be used in the page generation.
 media:
   minImageWidth: 800
 lastGitHead: 45157a87fe048d9763e40169cab7f9ed5f0e5b87
-boardId: whitepaper
+boardId: whitepaper-v2
 # Checkout ID for document deployment service
 checkoutId: ""
 # Should sync branding for documentation
 shouldSyncBranding: ""
-appUrl: https://bbqa6fhpf6d34dhv6aadz5fqwz7bs6t6kkvv3lhmok4.did.abtnet.io
+appUrl: https://staging.docsmith.aigne.io
